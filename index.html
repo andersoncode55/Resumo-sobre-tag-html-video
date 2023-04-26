@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo sobre a tag vídeo</title>
+</head>
+<body>
+    <h1>Resumo sobre a tag vídeo</h1>
+
+
+<!--A tag HTML para inserir vídeo em uma página da web é a <video>.-->
+<!--Com essa tag, é possível inserir arquivos de vídeo em diferentes formatos, definir opções de reprodução, como controle de volume e reprodução automática, e incluir legendas.-->
+<!--Aqui está um exemplo de código HTML para inserir um vídeo:-->
+<video width="640" height="360" controls>
+    <source src="caminho/para/arquivo.mp4" type="video/mp4">
+    <source src="caminho/para/arquivo.webm" type="video/webm">
+    Seu navegador não suporta a tag video.
+  </video>
+<!--Nesse exemplo, o atributo "width" e "height" definem as dimensões do vídeo. O atributo "controls" permite que o usuário controle a reprodução do vídeo, incluindo volume, play/pause e progresso.-->
+<!--As tags <source> definem as fontes do vídeo, permitindo que o navegador escolha o formato de arquivo suportado. O último texto, "Seu navegador não suporta a tag video", é exibido caso o navegador não seja capaz de reproduzir o vídeo.-->
+<!--Assim como com a tag <audio>, é uma boa prática incluir diferentes formatos de arquivo de vídeo para garantir a compatibilidade com diferentes navegadores. Além disso, você também pode incluir legendas usando a tag <track>, conforme mostrado abaixo:-->
+    <video width="640" height="360" controls>
+        <source src="caminho/para/arquivo.mp4" type="video/mp4">
+        <track src="caminho/para/arquivo.vtt" kind="subtitles" srclang="pt-br" label="Português" default>
+        Seu navegador não suporta a tag video.
+      </video>
+<!--Nesse exemplo, a tag <track> inclui um arquivo de legenda no formato VTT (WebVTT). O atributo "kind" define o tipo de legenda e "srclang" define o idioma. -->
+<!--O atributo "label" define o nome da legenda, que é exibido no menu de seleção de legenda.-->
+<!--O atributo "default" indica que essa legenda deve ser usada por padrão, a menos que o usuário escolha outra.-->
+
+
+
+
+
+<h2>atributo controls disablepictureinpicture</h2>
+<!--O atributo "controls" é usado na tag <video> e <audio> em HTML para exibir os controles padrão de reprodução para o usuário, como play/pause, controle de volume, progresso e outras opções.-->
+<!--O atributo "disablepictureinpicture" é um atributo booleano que pode ser usado em conjunto com o atributo "controls" na tag <video>.-->
+<!--Ele impede que o usuário ative o modo "Picture-in-Picture" (PiP) no vídeo. O modo PiP permite que o usuário minimize o vídeo e o mantenha em uma janela flutuante enquanto continua a navegar na página da web.-->
+<!--Aqui está um exemplo de código HTML que usa os atributos "controls" e "disablepictureinpicture" em uma tag <video>:-->
+    <video width="640" height="360" controls disablepictureinpicture>
+        <source src="caminho/para/arquivo.mp4" type="video/mp4">
+        Seu navegador não suporta a tag video.
+      </video>
+<!--Nesse exemplo, o atributo "controls" exibe os controles padrão de reprodução para o usuário, e o atributo "disablepictureinpicture" impede que o usuário ative o modo PiP no vídeo. -->
+<!--É importante lembrar que nem todos os navegadores suportam o atributo "disablepictureinpicture", portanto, é possível que o usuário ainda possa ativar o modo PiP, dependendo do navegador usado.-->
+    
+
+
+
+
+
+
+
+
+<h2>O atributo "controlslist"</h2>
+<!--O atributo "controlslist" é usado na tag <audio> ou <video> em HTML para especificar a lista de controles que devem ser exibidos para o usuário. Ele é usado em conjunto com o atributo "controls".-->
+<!--O valor "nodownload" para o atributo "controlslist" é usado para remover o botão de download dos controles de reprodução do vídeo ou áudio.-->
+<!--Quando este valor é usado, o usuário não pode baixar o arquivo de mídia diretamente da página da web.-->
+<!--Aqui está um exemplo de código HTML que usa o atributo "controlslist" com o valor "nodownload":-->
+<video width="640" height="360" controls controlslist="nodownload">
+    <source src="caminho/para/arquivo.mp4" type="video/mp4">
+    Seu navegador não suporta a tag video.
+  </video>
+<!--Nesse exemplo, o atributo "controlslist" com o valor "nodownload" remove o botão de download dos controles de reprodução do vídeo.-->
+<!--É importante lembrar que, embora esse atributo possa ajudar a evitar que os usuários baixem arquivos de mídia, ele não é uma medida de segurança eficaz e ainda é possível que o usuário baixe o arquivo de outras maneiras.-->
+
+
+
+</body>
+</html>
